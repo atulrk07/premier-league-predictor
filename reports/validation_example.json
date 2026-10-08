@@ -1,0 +1,33 @@
+{
+  "candidate_id": "lr_c0.1",
+  "split": "validation",
+  "fixture": {
+    "Season": "2023/24",
+    "Date": "2023-08-11",
+    "HomeTeam": "Burnley",
+    "AwayTeam": "Man City"
+  },
+  "actual_result": "A",
+  "probabilities_h_d_a": {
+    "H": 0.11949711737469504,
+    "D": 0.14701330522459047,
+    "A": 0.7334895774007145
+  },
+  "predicted_result": "A",
+  "raw_features": {
+    "home_points_mean_5": null,
+    "home_points_mean_10": null,
+    "home_goals_for_mean_5": null,
+    "home_goals_against_mean_5": null,
+    "home_history_count_5": 0.0,
+    "home_history_count_10": 0.0,
+    "home_rest_days": null,
+    "away_points_mean_5": 2.0,
+    "away_points_mean_10": 2.5,
+    "away_goals_for_mean_5": 1.4,
+    "away_goals_against_mean_5": 0.6,
+    "away_history_count_5": 5.0,
+    "away_history_count_10": 10.0,
+    "away_rest_days": 60.0
+  }
+}

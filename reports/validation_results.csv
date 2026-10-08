@@ -1,0 +1,9 @@
+candidate_id,family,parameters,train_log_loss,validation_log_loss,validation_rps,validation_accuracy,selected_in_family,winner
+lr_c0.1,logistic_regression,"{""C"": 0.1}",1.0020212404830486,0.9660518470919259,0.20124643849008417,0.55,True,True
+lr_c1,logistic_regression,"{""C"": 1.0}",1.0019484346924858,0.9662043101838376,0.20121439564710328,0.55,False,False
+rf_d5_leaf10,random_forest,"{""max_depth"": 5, ""min_samples_leaf"": 10}",0.9885295636905984,0.9853543648131129,0.20865965988508753,0.5236842105263158,False,False
+rf_d8_leaf10,random_forest,"{""max_depth"": 8, ""min_samples_leaf"": 10}",0.946965692214006,0.981780974040655,0.20715250042838032,0.531578947368421,True,False
+rf_d8_leaf20,random_forest,"{""max_depth"": 8, ""min_samples_leaf"": 20}",0.968426814064345,0.9826970697068848,0.20758540506392462,0.5210526315789473,False,False
+xgb_d2_n200_lr0.05,xgboost,"{""learning_rate"": 0.05, ""max_depth"": 2, ""n_estimators"": 200}",0.966713144565478,0.9768576832119813,0.2050717505147977,0.5184210526315789,True,False
+xgb_d3_n200_lr0.05,xgboost,"{""learning_rate"": 0.05, ""max_depth"": 3, ""n_estimators"": 200}",0.9199019660939391,0.9794983622042351,0.20520620904007147,0.531578947368421,False,False
+xgb_d3_n400_lr0.03,xgboost,"{""learning_rate"": 0.03, ""max_depth"": 3, ""n_estimators"": 400}",0.9057987974704954,0.978958826333721,0.20477481191906466,0.5421052631578948,False,False

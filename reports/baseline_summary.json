@@ -1,0 +1,72 @@
+{
+  "scope": "Training illustration only, not held-out evaluation; validation/test not loaded.",
+  "training_seasons": [
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23"
+  ],
+  "class_order": [
+    "H",
+    "D",
+    "A"
+  ],
+  "log_loss_epsilon": 1e-15,
+  "training_matches": 3420,
+  "training_counts": {
+    "H": 1533,
+    "D": 804,
+    "A": 1083
+  },
+  "training_probabilities": {
+    "H": 0.4482456140350877,
+    "D": 0.23508771929824562,
+    "A": 0.31666666666666665
+  },
+  "bookmaker_matches": 3420,
+  "bookmaker_coverage": 1.0,
+  "scores": [
+    {
+      "baseline": "training_frequency",
+      "subset": "all_training",
+      "matches": 3420,
+      "log_loss": 1.0641744937313724,
+      "rps": 0.23185518621114187
+    },
+    {
+      "baseline": "training_frequency",
+      "subset": "training_with_valid_odds",
+      "matches": 3420,
+      "log_loss": 1.0641744937313724,
+      "rps": 0.23185518621114187
+    },
+    {
+      "baseline": "bookmaker",
+      "subset": "training_with_valid_odds",
+      "matches": 3420,
+      "log_loss": 0.9593986604914393,
+      "rps": 0.1955664658141884
+    }
+  ],
+  "hand_example": {
+    "kind": "Synthetic illustration",
+    "odds_h_d_a": [
+      2,
+      3,
+      4
+    ],
+    "actual": "D",
+    "probabilities_h_d_a": [
+      0.46153846153846156,
+      0.3076923076923077,
+      0.23076923076923078
+    ],
+    "log_loss": 1.1786549963416462,
+    "rps": 0.13313609467455623
+  }
+}

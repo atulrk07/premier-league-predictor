@@ -1,0 +1,14 @@
+{
+  "candidate_id": "training_frequency",
+  "family": "baseline",
+  "parameters": "training H/D/A frequencies",
+  "train_log_loss": 1.0641744937313724,
+  "validation_log_loss": 1.0541582793820072,
+  "validation_rps": 0.2337773160972607,
+  "validation_accuracy": 0.4605263157894737,
+  "probabilities_h_d_a": [
+    0.4482456140350877,
+    0.23508771929824562,
+    0.31666666666666665
+  ]
+}

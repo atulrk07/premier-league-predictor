@@ -1,0 +1,27 @@
+{
+  "family_candidates": {
+    "logistic_regression": "lr_c0.1",
+    "xgboost": "xgb_d2_n200_lr0.05",
+    "random_forest": "rf_d8_leaf10"
+  },
+  "lowest_validation_log_loss": 0.9660518470919259,
+  "eligible_within_tolerance": [
+    "lr_c0.1"
+  ],
+  "winner_id": "lr_c0.1",
+  "winner_family": "logistic_regression",
+  "winner_validation_log_loss": 0.9660518470919259,
+  "tolerance": 0.005,
+  "family_preference": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "rule": "Minimum validation log loss per family; within 0.005 of global minimum prefer logistic regression, Random Forest, then XGBoost.",
+  "refit_on_validation": false,
+  "test_evaluated": false,
+  "frozen_at_utc": "2026-10-07T03:57:55.545667+00:00",
+  "artifact_sha256": "b46ef35326c11192491b5b54b3bce2786101339d2da4d7bc4f72acdb9c80f78f",
+  "training_rows": 3420,
+  "validation_rows": 380
+}

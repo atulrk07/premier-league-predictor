@@ -1,0 +1,74 @@
+{
+  "2014/15": {
+    "url": "https://www.football-data.co.uk/mmz4281/1415/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:11.376410+00:00",
+    "sha256": "76b7858051ff6b17f46f49f26fdc70c1f29537270492606f5cc63d67fad5d149",
+    "file": "data/raw/E0_1415.csv"
+  },
+  "2015/16": {
+    "url": "https://www.football-data.co.uk/mmz4281/1516/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:12.790869+00:00",
+    "sha256": "bd3502a18c38a1597fd9af62e2366b4015006d3528dd4d18b311bd6237bbc085",
+    "file": "data/raw/E0_1516.csv"
+  },
+  "2016/17": {
+    "url": "https://www.football-data.co.uk/mmz4281/1617/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:14.186563+00:00",
+    "sha256": "9625a7652b5f98fbd3e2e4d378c851fc246693f3343e34a72428d5b6e864d3e0",
+    "file": "data/raw/E0_1617.csv"
+  },
+  "2017/18": {
+    "url": "https://www.football-data.co.uk/mmz4281/1718/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:15.650122+00:00",
+    "sha256": "4f3389365ef3f7ac966764ed8ba67cf3b79f5aebed18dd224099c4b2c98bc67b",
+    "file": "data/raw/E0_1718.csv"
+  },
+  "2018/19": {
+    "url": "https://www.football-data.co.uk/mmz4281/1819/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:17.091126+00:00",
+    "sha256": "7c096b3c2ecd54c6993d22eeea73450c2bde11e3457238b226b8f43c62dfc35e",
+    "file": "data/raw/E0_1819.csv"
+  },
+  "2019/20": {
+    "url": "https://www.football-data.co.uk/mmz4281/1920/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:18.773711+00:00",
+    "sha256": "100037618b94f94057400bb02bf6bac4ef74ddaa58cde4b38370839c39caee61",
+    "file": "data/raw/E0_1920.csv"
+  },
+  "2020/21": {
+    "url": "https://www.football-data.co.uk/mmz4281/2021/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:20.315358+00:00",
+    "sha256": "5afe63f69401457b8354eaacee24f9a3e520b3c3af6329564a9783e20d789c62",
+    "file": "data/raw/E0_2021.csv"
+  },
+  "2021/22": {
+    "url": "https://www.football-data.co.uk/mmz4281/2122/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:21.883477+00:00",
+    "sha256": "335afcbabeb2939fa10ab39ba3e8215072d0b577cb8d0705c1e44c56e934e703",
+    "file": "data/raw/E0_2122.csv"
+  },
+  "2022/23": {
+    "url": "https://www.football-data.co.uk/mmz4281/2223/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:23.429470+00:00",
+    "sha256": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380",
+    "file": "data/raw/E0_2223.csv"
+  },
+  "2023/24": {
+    "url": "https://www.football-data.co.uk/mmz4281/2324/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:24.984209+00:00",
+    "sha256": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
+    "file": "data/raw/E0_2324.csv"
+  },
+  "2024/25": {
+    "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:26.542045+00:00",
+    "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+    "file": "data/raw/E0_2425.csv"
+  },
+  "2025/26": {
+    "url": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+    "retrieved_at_utc": "2026-10-07T01:16:28.123406+00:00",
+    "sha256": "3e3a8352f9ada6789c508d6ca184424421fed56a30400904a4a327c583407e62",
+    "file": "data/raw/E0_2526.csv"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-08T04:18:21.815082+00:00",
+  "frozen_artifact_sha256": "b46ef35326c11192491b5b54b3bce2786101339d2da4d7bc4f72acdb9c80f78f",
+  "winner_decision_sha256": "e1936990e18537912c59660fa3fc442dedd2d3316f070c862dd2aeabe9d7bdf2",
+  "winner_id": "lr_c0.1",
+  "winner_family": "logistic_regression",
+  "family_candidates": {
+    "logistic_regression": "lr_c0.1",
+    "xgboost": "xgb_d2_n200_lr0.05",
+    "random_forest": "rf_d8_leaf10"
+  },
+  "frozen_at_utc": "2026-10-07T03:57:55.545667+00:00",
+  "source_sha256": {
+    "2014/15": "76b7858051ff6b17f46f49f26fdc70c1f29537270492606f5cc63d67fad5d149",
+    "2015/16": "bd3502a18c38a1597fd9af62e2366b4015006d3528dd4d18b311bd6237bbc085",
+    "2016/17": "9625a7652b5f98fbd3e2e4d378c851fc246693f3343e34a72428d5b6e864d3e0",
+    "2017/18": "4f3389365ef3f7ac966764ed8ba67cf3b79f5aebed18dd224099c4b2c98bc67b",
+    "2018/19": "7c096b3c2ecd54c6993d22eeea73450c2bde11e3457238b226b8f43c62dfc35e",
+    "2019/20": "100037618b94f94057400bb02bf6bac4ef74ddaa58cde4b38370839c39caee61",
+    "2020/21": "5afe63f69401457b8354eaacee24f9a3e520b3c3af6329564a9783e20d789c62",
+    "2021/22": "335afcbabeb2939fa10ab39ba3e8215072d0b577cb8d0705c1e44c56e934e703",
+    "2022/23": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380",
+    "2023/24": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
+    "2024/25": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+    "2025/26": "3e3a8352f9ada6789c508d6ca184424421fed56a30400904a4a327c583407e62"
+  },
+  "test_seasons": [
+    "2024/25",
+    "2025/26"
+  ],
+  "class_order": [
+    "H",
+    "D",
+    "A"
+  ],
+  "low_history_definition": "Either team has fewer than five eligible prior EPL matches",
+  "low_history_threshold": 5,
+  "calibration_edges": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0
+  ],
+  "calibration_intervals": "[0,.2], (.2,.4], (.4,.6], (.6,.8], (.8,1]",
+  "refit": false,
+  "calibrator_fitted": false,
+  "zero_division_classification": 0,
+  "analysis_scope": "Error groups and worst errors describe final-test outcomes; no post-test tuning or winner reselection.",
+  "completed_at_utc": "2026-10-08T04:18:32.510613+00:00",
+  "test_matches": 760,
+  "coverage": [
+    {
+      "season": "2024/25",
+      "test_matches": 380,
+      "bookmaker_matches": 380,
+      "coverage": 1.0
+    },
+    {
+      "season": "2025/26",
+      "test_matches": 380,
+      "bookmaker_matches": 380,
+      "coverage": 1.0
+    },
+    {
+      "season": "combined",
+      "test_matches": 760,
+      "bookmaker_matches": 760,
+      "coverage": 1.0
+    }
+  ],
+  "output_sha256": {
+    "test_results.csv": "d3db412ccee818f726a78824f164a0b15b27ceb5375f3bcb4fe23611fe617489",
+    "test_classification.csv": "6af702a71645ef576a46594846647daa1bffa8ccaa5eff3a1450ce041d48e4f4",
+    "test_coverage.csv": "77a8be0ae438c81016201bbe3a489a109311c411a64405c7ac2766491951cec5",
+    "test_predictions.csv": "ec57d8324690d6f0fc8e253540bf30e9db96684fd260c49a07c5074e87b6ae98",
+    "calibration_bins.csv": "e76480198a04d4c1a9f3bc4e041ccbf00578f9c895a8b360b250207e0cbf5fbf",
+    "calibration.png": "119f92268426b767443d40621d40fa2b9f46506a572345974c38d2e9e577abc8",
+    "calibration.pdf": "de0204f3e0c57efc6533c94bed0a01792146ca3a7ac8645accd1896048d4904e",
+    "test_error_groups.csv": "e824197c4d752de862561acff588e4c05886b0f15b8be76c9f1abcc72417412f",
+    "test_error_examples.csv": "938c0508f7a28fad550cf776c43ebaaa0ad3826233a23a37d858479855ee56a2",
+    "test_example.json": "8b35790bd02e5b9618aeb0a787ba136c2503ddf7aa6aab94a843832b7f943d5f"
+  },
+  "test_evaluated": true,
+  "winner_preserved": true
+}

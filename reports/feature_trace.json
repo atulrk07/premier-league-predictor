@@ -1,0 +1,198 @@
+{
+  "fixture": {
+    "Season": "2014/15",
+    "Date": "2014-10-18",
+    "HomeTeam": "Arsenal",
+    "AwayTeam": "Hull"
+  },
+  "features": {
+    "home_points_mean_5": 1.2,
+    "home_points_mean_10": 1.4285714285714286,
+    "home_goals_for_mean_5": 1.4,
+    "home_goals_against_mean_5": 1.2,
+    "home_history_count_5": 5,
+    "home_history_count_10": 7,
+    "home_rest_days": 13,
+    "away_points_mean_5": 1.0,
+    "away_points_mean_10": 1.2857142857142858,
+    "away_goals_for_mean_5": 1.8,
+    "away_goals_against_mean_5": 2.0,
+    "away_history_count_5": 5,
+    "away_history_count_10": 7,
+    "away_rest_days": 14
+  },
+  "history": {
+    "home": [
+      {
+        "Season": "2014/15",
+        "Date": "2014-08-16",
+        "HomeTeam": "Arsenal",
+        "AwayTeam": "Crystal Palace",
+        "Venue": "home",
+        "Opponent": "Crystal Palace",
+        "GoalsFor": 2,
+        "GoalsAgainst": 1,
+        "Points": 3,
+        "in_window_5": false
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-08-23",
+        "HomeTeam": "Everton",
+        "AwayTeam": "Arsenal",
+        "Venue": "away",
+        "Opponent": "Everton",
+        "GoalsFor": 2,
+        "GoalsAgainst": 2,
+        "Points": 1,
+        "in_window_5": false
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-08-31",
+        "HomeTeam": "Leicester",
+        "AwayTeam": "Arsenal",
+        "Venue": "away",
+        "Opponent": "Leicester",
+        "GoalsFor": 1,
+        "GoalsAgainst": 1,
+        "Points": 1,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-09-13",
+        "HomeTeam": "Arsenal",
+        "AwayTeam": "Man City",
+        "Venue": "home",
+        "Opponent": "Man City",
+        "GoalsFor": 2,
+        "GoalsAgainst": 2,
+        "Points": 1,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-09-20",
+        "HomeTeam": "Aston Villa",
+        "AwayTeam": "Arsenal",
+        "Venue": "away",
+        "Opponent": "Aston Villa",
+        "GoalsFor": 3,
+        "GoalsAgainst": 0,
+        "Points": 3,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-09-27",
+        "HomeTeam": "Arsenal",
+        "AwayTeam": "Tottenham",
+        "Venue": "home",
+        "Opponent": "Tottenham",
+        "GoalsFor": 1,
+        "GoalsAgainst": 1,
+        "Points": 1,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-10-05",
+        "HomeTeam": "Chelsea",
+        "AwayTeam": "Arsenal",
+        "Venue": "away",
+        "Opponent": "Chelsea",
+        "GoalsFor": 0,
+        "GoalsAgainst": 2,
+        "Points": 0,
+        "in_window_5": true
+      }
+    ],
+    "away": [
+      {
+        "Season": "2014/15",
+        "Date": "2014-08-16",
+        "HomeTeam": "QPR",
+        "AwayTeam": "Hull",
+        "Venue": "away",
+        "Opponent": "QPR",
+        "GoalsFor": 1,
+        "GoalsAgainst": 0,
+        "Points": 3,
+        "in_window_5": false
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-08-24",
+        "HomeTeam": "Hull",
+        "AwayTeam": "Stoke",
+        "Venue": "home",
+        "Opponent": "Stoke",
+        "GoalsFor": 1,
+        "GoalsAgainst": 1,
+        "Points": 1,
+        "in_window_5": false
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-08-31",
+        "HomeTeam": "Aston Villa",
+        "AwayTeam": "Hull",
+        "Venue": "away",
+        "Opponent": "Aston Villa",
+        "GoalsFor": 1,
+        "GoalsAgainst": 2,
+        "Points": 0,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-09-15",
+        "HomeTeam": "Hull",
+        "AwayTeam": "West Ham",
+        "Venue": "home",
+        "Opponent": "West Ham",
+        "GoalsFor": 2,
+        "GoalsAgainst": 2,
+        "Points": 1,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-09-20",
+        "HomeTeam": "Newcastle",
+        "AwayTeam": "Hull",
+        "Venue": "away",
+        "Opponent": "Newcastle",
+        "GoalsFor": 2,
+        "GoalsAgainst": 2,
+        "Points": 1,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-09-27",
+        "HomeTeam": "Hull",
+        "AwayTeam": "Man City",
+        "Venue": "home",
+        "Opponent": "Man City",
+        "GoalsFor": 2,
+        "GoalsAgainst": 4,
+        "Points": 0,
+        "in_window_5": true
+      },
+      {
+        "Season": "2014/15",
+        "Date": "2014-10-04",
+        "HomeTeam": "Hull",
+        "AwayTeam": "Crystal Palace",
+        "Venue": "home",
+        "Opponent": "Crystal Palace",
+        "GoalsFor": 2,
+        "GoalsAgainst": 0,
+        "Points": 3,
+        "in_window_5": true
+      }
+    ]
+  }
+}
