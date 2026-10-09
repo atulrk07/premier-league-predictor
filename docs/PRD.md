@@ -4,9 +4,9 @@ Predict Premier League home-win, draw, and away-win probabilities from pre-match
 
 ## Scope
 
-The implementation includes validated historical data, date-safe rolling features, eight model configurations, frozen model selection, final-test evaluation, calibration plots, and prediction exports. Presentation uses reusable Python modules, one notebook, saved reports, and reproduction instructions in the README.
+The implementation includes validated historical data, date-safe rolling features, eight model configurations, frozen model selection, final-test evaluation, calibration plots, and prediction exports. Presentation uses reusable Python modules, one notebook, a historical Streamlit dashboard, saved reports, and reproduction instructions in the README.
 
-API and frontend development, Docker, CI, load testing, live feeds, and deployment are outside scope. No probability calibrator is fitted.
+API development, Docker, CI, load testing, live feeds, and deployment are outside scope. No probability calibrator is fitted. Upcoming-fixture forecasting and refreshed-history workflows are reserved for a separate second stage after review.
 
 ## Data contract
 
@@ -96,6 +96,8 @@ The validation-selected winner is logistic regression with `C=0.1`, validation l
 These values come from [test_results.csv](../reports/test_results.csv); per-season scores and correct counts are included there. The winner improves on training frequency but has higher test log loss than the bookmaker baseline. A single validation season and two test seasons provide limited evidence of performance stability.
 
 ## Presentation and outputs
+
+The historical dashboard displays saved model/baseline results with season filters, fixture probabilities and pre-match features, calibration and classification analysis, and methodology. It reads a separate hash-verified display snapshot and original reports, with cached loading and no runtime fitting or prediction. Launch and snapshot-preparation commands are documented in the README.
 
 [analysis.ipynb](../notebooks/analysis.ipynb) imports shared code, runs top to bottom without hidden state, and displays saved final-test outputs without repeating test prediction or fitting. It presents:
 

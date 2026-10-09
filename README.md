@@ -2,7 +2,45 @@
 
 A reproducible machine-learning experiment that estimates Premier League **home-win, draw, and away-win probabilities** from recent results and scoring form. It compares logistic regression, Random Forest, and XGBoost with a training-frequency baseline and normalized bookmaker odds.
 
-The repository includes validated data provenance, date-safe feature engineering, eight model configurations, frozen fitted pipelines, final-test predictions, and calibration reports. Explore the [analysis notebook](notebooks/analysis.ipynb) or the [project specification](docs/PRD.md).
+The repository includes validated data provenance, date-safe feature engineering, eight model configurations, frozen fitted pipelines, final-test predictions, calibration reports, and a historical Streamlit dashboard. Explore the [analysis notebook](notebooks/analysis.ipynb) or the [project specification](docs/PRD.md).
+
+## Historical dashboard
+
+After creating and activating the Python environment described below, install the dashboard dependencies and launch:
+
+```sh
+python -m pip install -r requirements-dashboard.txt
+python -m streamlit run streamlit_app.py
+```
+
+Open the local URL printed by Streamlit, normally `http://localhost:8501`. The dashboard provides:
+
+- **Results overview:** saved model/baseline scores, test-season filters, bookmaker coverage, and calculated baseline improvements. Positive reductions indicate lower loss; accuracy gains are percentage points.
+- **Historical match explorer:** validation and test fixtures filtered by season/team, H/D/A probabilities, bookmaker comparison, actual scores, and readable pre-match features.
+- **Model analysis:** calibration curves with bin counts, a confusion matrix, and outcome-specific performance for the selected model. Feature-attribution explanations are not implemented.
+- **Methodology:** chronological splits, feature definitions, leakage safeguards, provenance, and limitations.
+
+The app reads saved forecasts and metrics. Streamlit caches verified data and derived analysis, invalidating the data cache when input files change. It never trains or recomputes model predictions during interaction. The original experiment files and reported test scores remain unchanged.
+
+[data/dashboard/matches.csv](data/dashboard/matches.csv) adds display-only scores, features, and bookmaker probabilities to the saved winning-model predictions. Its [manifest](data/dashboard/manifest.json) records hashes of the snapshot and original inputs. This snapshot allows dashboard use without raw downloads.
+
+To rebuild the display snapshot explicitly from the original hash-verified raw archives:
+
+```sh
+python -m src.dashboard_data
+```
+
+Preparation reuses `build_features`, the frozen selected pipeline, and `predict_hda` to verify that all 1,140 displayed probability vectors reproduce the saved predictions within `1e-10`. It checks bookmaker test probabilities against their saved forecasts and writes only `data/dashboard/`. This is snapshot preparation, not a match-history refresh or a retraining command.
+
+**Example:** select season **2024/25**, team **Man United**, and **16 August 2024 · Man United vs Fulham**. The historical forecast is H **41.65%**, D **21.87%**, A **36.47%**. H is the most likely outcome, but is below 50%; the result was 1–0 and the individual log loss is **0.875827**. The last-five points means are 1.4 for Man United and 1.0 for Fulham. Displayed rest days of 60 are capped values. These features describe the inputs, not individual causal contributions.
+
+Dashboard checks:
+
+```sh
+python -m pytest tests/test_dashboard.py -q
+```
+
+This release covers historical forecasts only. Upcoming fixture entry, CSV prediction uploads, and refreshed-history workflows are reserved for stage 2 after review. Historical forecasts are not live predictions or guaranteed outcomes.
 
 ## Results
 
@@ -161,6 +199,7 @@ Tests cover data validation, hand-calculated metrics and features, current/futur
 ```text
 config/experiment.json       Split, features, model presets, and selection rule
 data/sources.json            Source URLs, timestamps, and raw-file SHA256 hashes
+data/dashboard/              Historical display snapshot and provenance
 docs/PRD.md                 Project specification
 notebooks/analysis.ipynb     Data exploration, feature trace, and saved results
 reports/                    Scores, predictions, fitted pipelines, and figures
@@ -170,8 +209,11 @@ src/features.py             Date-safe rolling features and fixture tracing
 src/metrics.py              Probability metrics and baseline calculations
 src/experiment.py           Training pipelines and validation selection
 src/evaluation.py           Frozen final-test evaluation and reporting
+src/dashboard_data.py       Prepare and verify the historical display snapshot
+streamlit_app.py            Historical results dashboard
 tests/                      Methodology and correctness checks
 requirements.txt            Pinned dependencies
+requirements-dashboard.txt  Original dependencies plus pinned Streamlit packages
 ```
 
 ## Limitations

@@ -1,0 +1,58 @@
+{
+  "created_at_utc": "2026-10-09T03:52:32.343789+00:00",
+  "rows": 1140,
+  "winner_id": "lr_c0.1",
+  "class_order": [
+    "H",
+    "D",
+    "A"
+  ],
+  "feature_columns": [
+    "home_points_mean_5",
+    "home_points_mean_10",
+    "home_goals_for_mean_5",
+    "home_goals_against_mean_5",
+    "home_history_count_5",
+    "home_history_count_10",
+    "home_rest_days",
+    "away_points_mean_5",
+    "away_points_mean_10",
+    "away_goals_for_mean_5",
+    "away_goals_against_mean_5",
+    "away_history_count_5",
+    "away_history_count_10",
+    "away_rest_days"
+  ],
+  "snapshot_sha256": "169519d57f08a09b63447d27b18bf8a183c6f4793ec7175a92f5219afe5c226c",
+  "input_sha256": {
+    "config/experiment.json": "f38b2e5176e06144f3a2b6b431f24179dab31067753b095316a8cf8c6592a6b9",
+    "data/sources.json": "198e2657be0fd1a6ab202d473601d7fda89a896a80d26ab0d4e5efa4969061c7",
+    "reports/experiment_config.json": "86497ed6572ca70cd9aa2e5b28f12b7ed5c1ab92266c7d3b50c78c94b8591130",
+    "reports/selected_pipelines.joblib": "b46ef35326c11192491b5b54b3bce2786101339d2da4d7bc4f72acdb9c80f78f",
+    "reports/winner_decision.json": "e1936990e18537912c59660fa3fc442dedd2d3316f070c862dd2aeabe9d7bdf2",
+    "reports/test_evaluation.json": "db3a6c41d5be95c985938fd3d3e54cb66ce066e717368ef74ac0a2fd41ca5f31",
+    "reports/test_predictions.csv": "ec57d8324690d6f0fc8e253540bf30e9db96684fd260c49a07c5074e87b6ae98",
+    "reports/validation_predictions.csv": "9b93d66193370bb0bed9d8a622a7fe145a2f5ad3ed2d58cf626d0058a334b2a9",
+    "reports/test_results.csv": "d3db412ccee818f726a78824f164a0b15b27ceb5375f3bcb4fe23611fe617489",
+    "reports/test_coverage.csv": "77a8be0ae438c81016201bbe3a489a109311c411a64405c7ac2766491951cec5",
+    "reports/test_classification.csv": "6af702a71645ef576a46594846647daa1bffa8ccaa5eff3a1450ce041d48e4f4",
+    "reports/calibration_bins.csv": "e76480198a04d4c1a9f3bc4e041ccbf00578f9c895a8b360b250207e0cbf5fbf",
+    "reports/validation_results.csv": "a4f611745a2c49662b4ca44b1f6c1f240131a9b57d03cd2160df3cd683d1c645",
+    "reports/frequency_validation.json": "d1a883d2d33d3f4a3324778c6d0aaffd9c3d664d3dc001096da7e30f24dd4f9e"
+  },
+  "source_sha256": {
+    "2014/15": "76b7858051ff6b17f46f49f26fdc70c1f29537270492606f5cc63d67fad5d149",
+    "2015/16": "bd3502a18c38a1597fd9af62e2366b4015006d3528dd4d18b311bd6237bbc085",
+    "2016/17": "9625a7652b5f98fbd3e2e4d378c851fc246693f3343e34a72428d5b6e864d3e0",
+    "2017/18": "4f3389365ef3f7ac966764ed8ba67cf3b79f5aebed18dd224099c4b2c98bc67b",
+    "2018/19": "7c096b3c2ecd54c6993d22eeea73450c2bde11e3457238b226b8f43c62dfc35e",
+    "2019/20": "100037618b94f94057400bb02bf6bac4ef74ddaa58cde4b38370839c39caee61",
+    "2020/21": "5afe63f69401457b8354eaacee24f9a3e520b3c3af6329564a9783e20d789c62",
+    "2021/22": "335afcbabeb2939fa10ab39ba3e8215072d0b577cb8d0705c1e44c56e934e703",
+    "2022/23": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380",
+    "2023/24": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3",
+    "2024/25": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+    "2025/26": "3e3a8352f9ada6789c508d6ca184424421fed56a30400904a4a327c583407e62"
+  },
+  "verification": "Frozen pipeline reproduces saved H/D/A predictions within 1e-10; no fitting"
+}
